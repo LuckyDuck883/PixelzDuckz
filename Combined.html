@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chaos Craft 3D</title>
+    <style>
+        body { margin: 0; overflow: hidden; background-color: #87CEEB; font-family: sans-serif; }
+        #crosshair {
+            position: absolute; top: 50%; left: 50%;
+            width: 20px; height: 20px; color: white;
+            font-size: 30px; transform: translate(-50%, -50%);
+            pointer-events: none; user-select: none;
+        }
+        #ui {
+            position: absolute; bottom: 20px; left: 20px;
+            color: white; background: rgba(0,0,0,0.5);
+            padding: 15px; border-radius: 10px; pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="crosshair">+</div>
+    <div id="ui">
+        <b>WASD</b>: Move | <b>Space</b>: Jump<br>
+        <b>Right Click</b>: Build | <b>G</b>: TNT<br>
+        <b>R</b>: Reset World | <b>Click</b> to Start
+    </div>
+    <script type="importmap">
+        { "imports": { "three": "https://unpkg.com/three@0.160.0/build/three.module.js" } }
+    </script>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
