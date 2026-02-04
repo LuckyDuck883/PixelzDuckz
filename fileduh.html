@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>W MineCraft Feature</title>
+    <style>
+        body { margin: 0; overflow: hidden; background-color: #87CEEB; } /* Sky Blue */
+        #instructions {
+            position: absolute; top: 10px; left: 10px;
+            color: white; font-family: sans-serif;
+            background: rgba(0,0,0,0.5); padding: 10px; pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="instructions">Click to place a Grass Block! 🧱</div>
+    <script type="importmap">
+        { "imports": { "three": "https://unpkg.com/three@0.160.0/build/three.module.js" } }
+    </script>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
