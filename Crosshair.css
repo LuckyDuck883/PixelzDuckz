@@ -1,0 +1,11 @@
+#crosshair {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    color: white;
+    font-size: 24px;
+    transform: translate(-50%, -50%);
+    pointer-events: none; /* Let clicks pass through to the game */
+}
